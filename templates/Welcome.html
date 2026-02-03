@@ -1,0 +1,11 @@
+<!-- templates/welcome.html -->
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome</title>
+  </head>
+  <body>
+    <h2>Welcome, {{ user }}!</h2>
+    <a href="{{ url_for('logout') }}">Logout</a>
+  </body>
+</html>
