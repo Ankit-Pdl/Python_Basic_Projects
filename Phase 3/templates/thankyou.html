@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+<div class="container success-message">
+  <h2>Thank You {{ user }} for Your Feedback!</h2>
+  <p>
+    Your feedback has been successfully submitted. We appreciate your input and
+    will use it to improve our services.
+  </p>
+</div>
+{% endblock %}
