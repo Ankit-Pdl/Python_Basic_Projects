@@ -1,0 +1,116 @@
+/* 1. Global Reset - Clears default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* 2. Body Styling - Centers the form on the screen */
+body {
+    background-color: #f3f4f6;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. Container - The "White Card" */
+.login-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 4. Typography */
+h2 {
+    color: #1f2937;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* 5. Input Fields */
+.input-group {
+    margin-bottom: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Highlight the box when the user clicks it */
+.input-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+/* 6. Button Styling */
+.login-btn {
+    width: 100%;
+    background-color: #667eea;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    background-color: #5a67d8;
+}
+
+/* 7. Links and Extras */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.forgot-link, .signup-text a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link:hover, .signup-text a:hover {
+    text-decoration: underline;
+}
+
+.signup-text {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+}
